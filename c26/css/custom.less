@@ -1,0 +1,351 @@
+@white: #eee;
+  .white { color: @white; }
+  .bgwhite { background-color: @white; }
+
+@whiter: #eee;
+  .whiter { color: @whiter; }
+  .bgwhiter { background-color: @whiter; }
+
+@whitest: #ddd;
+  .whitest { color: @whitest; }
+  .bgwhitest { background-color: @whitest; }
+
+@black: #111;
+  .black { color: @black; }
+  .bgblack { background-color: @black; }
+  .blackLite {color: #333;}
+  .blackest {color: #555;}
+
+.white {
+    color: #eee;
+}
+
+@red: #B33630;
+  .red { color: @red; }
+  .bgred { background-color: @red; }
+  @redDark: darken(@red, 15%);
+  @redLite: lighten(@red, 15%);
+  @redDarker: darken(@red, 25%);
+  @redLiter: lighten(@red, 30%);
+  @redrgba: rgba(179,54,48,.9);
+
+@green: #4A993E;
+  .green { color: @green; }
+  .bggreen { background-color: @green; }
+  @greenDark: darken(@green, 15%);
+  @greenLite: lighten(@green, 15%);
+  @greenDarker: darken(@green, 30%);
+  @greenLiter: lighten(@green, 30%);
+
+@bgBlack: #191919;
+  .bgBlack { background-color: @bgBlack; }
+@bgSupp: #2a2a2a;
+  .bgSupp { background-color: @bgSupp; }
+
+.taC {
+    text-align: center;
+}
+
+.taL {
+    text-align: left;
+}
+
+.taR {
+    text-align: right;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.Alice {
+    font-family: 'Alice', serif;
+}
+
+.Roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Gilda {
+    font-family: 'Gilda Display', serif;
+}
+
+body {
+    // //aodcdn.appspot.com/c26/images/h2.jpg
+    background: @bgBlack url('//aodcdn.appspot.com/c26/images/h2.jpg') no-repeat center fixed;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-top: solid 5px @red;
+    border-bottom: solid 5px @red;
+    padding-top: 20px;
+}
+
+body.page-template-roster-php {
+  background: @bgBlack url('//aodcdn.appspot.com/c26/images/h2.jpg') no-repeat center 100px fixed;
+}
+
+#wrap {
+    background: transparent;
+}
+
+header,
+header h1,
+header h2,
+header h3 {
+    .taL;
+    .Roboto;
+    .upper;
+}
+
+.home header,
+.home header h1,
+.home header h2,
+.home header h3 {
+    margin-top: 20px;
+}
+
+
+#navigation {
+    position: absolute;
+    top: 63px;
+    right: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {padding-top: 20px}
+
+#logo img {
+    vertical-align: middle;
+    margin: 0px 0 10px;
+}
+
+#logo img.kiss {margin-right: 30px}
+
+header h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 60px;
+    color: #444;
+}
+
+header h2 {
+    .Roboto;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.bgTransDark {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 0px;
+}
+
+.bgimage {
+    margin-top: 0px;
+    padding-top: 75px;
+}
+
+.blurb {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.btn--inactive,
+.btn--inactive:hover,
+.btn--inactive:active,
+.btn--inactive:focus {
+    background-color: rgba(255,255,255,0.3);
+    color: @whiter;
+    cursor: default;
+    box-shadow: none;
+}
+
+.home .btn--inactive,
+.home .btn--inactive:hover,
+.home .btn--inactive:active,
+.home .btn--inactive:focus {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.btn--natural {
+    vertical-align: baseline;
+    font-size: inherit;
+    line-height: inherit;
+    height: auto;
+    padding-right: 0em;
+    padding-left: 0em;
+}
+
+.enter h3,
+.exit h3 {
+    .taC
+}
+
+a:link.enter .btn--positive,
+a:visited.enter .btn--positive {color: @greenDark;}
+a:hover.enter .btn--positive {color: @white;}
+a.enter p {color: @greenDark;}
+
+.exit {color: @red;}
+a:link.exit .btn--negative,
+a:visited.exit .btn--negative {color: @redDark;}
+a:hover.exit .btn--negative {color: @white;}
+a.exit p {color: @redDark;}
+
+a.exit h3 {
+    color: #777;
+}
+
+a:hover.exit h3 {
+    color: @white;
+}
+
+
+
+.table-striped tbody > tr:nth-child(even) > td.bgred,
+.table-striped tbody > tr:nth-child(even) > th.bgred {
+  .bgred;
+}
+
+.table tr {
+  background-color: rgba(35, 35, 35,.8);
+}
+
+.table td .bgred {
+  font-weight: bold;
+}
+
+.table a,
+.table a:link,
+.table a:visited {
+  .whitest;
+}
+
+.past {
+  .blackest;
+  text-decoration: line-through;
+}
+
+.blackest a,
+.blackest a:link,
+.blackest a:visited {
+  .blackest;
+}
+.blackest a:hover {
+  color: @red;
+}
+
+#roster em {
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 0px dotted @bgSupp;
+  .white;
+}
+
+.info {
+  margin: 40px 0;
+}
+
+#footer-wrap {
+    background: transparent;
+    margin-top: 100px;
+}
+
+#footer {
+    border-top: solid 5px #222;
+}
+
+.home .genericon,
+.info .genericon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 60px;
+    line-height: 1;
+    font-family: 'Genericons';
+    text-decoration: inherit;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+header .genericon,
+.info-mini .genericon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 30px;
+    line-height: 1;
+    font-family: 'Genericons';
+    text-decoration: inherit;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: middle;
+}
+.well.round {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.section-title h1,
+.section-title h2,
+.section-title h3 {
+  display: inline;
+}
+
+.section-title.supp {
+  padding: 1px 20px 5px 20px;
+}
+
+.section-title.small {
+  padding: 0px 20px 0px 20px;
+  margin: 20px 10px 0px 10px;
+}
+
+.popover,
+.popover-title {
+    background-color: @red;
+    .whiter;
+}
+
+.slider {
+  margin-top: 0;
+}
+
+.noMb {
+  margin-bottom: 0;
+}
+
+.noPb {
+  padding-bottom: 0;
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+hr {
+  .blackLite;
+}
+
+.well .genericon {
+  color: @redDarker;
+}
